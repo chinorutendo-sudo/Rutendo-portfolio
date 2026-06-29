@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rutendo Chinho Portfolio</title>
+    <link rel="stylesheet" href="Portfolio.css">
+</head>
+<body>
+
+    
+    <header>
+        <nav>
+            <h2 class="logo">Rutendo</h2>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <button class="btn">Click Me</button>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-text">
+            <h3>Hello, I am</h3>
+            <h1>Rutendo Chinho</h1>
+            <h2>Student | Programmer | Web Developer</h2>
+
+            <p>
+                * welcome to my portfolio wabsite.l am passionate about programming,we development,and creating innovative digital solutions.l enjoy learnin new technologies and building projects
+                that solve real-world problems</p>
+            
+
+
+            <div class="stats">
+                <div class="box">
+                    <h2>2+</h2>
+                    <p>Years Learning</p>
+                </div>
+
+                <div class="box">
+                    <h2>10+</h2>
+                    <p>Projects</p>
+                </div>
+
+                <div class="box">
+                    <h2>100%</h2>
+                    <p>Skills level</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-image">
+            <img src="WhatsApp Image 2026-06-24 at 12.28.49 AM.jpeg" alt="Rutendo">
+        </div>
+    </section>
+
+    
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="card">
+            <p>
+       * Hello, I am Rutendo Chino. I am a passionate student who is interested in technology, programming, and web development. I enjoy learning how websites and applications are built using HTML, CSS, and Python. I like solving problems and creating simple, useful digital projects. My goal is to improve my skills and become a better software developer by building more projects and learning new technologies. I am hardworking, dedicated, and always ready to learn new things.
+            </p>
+        </div>
+    
+    <section id="projects">
+        <h2>My Recent Works</h2>
+
+        <div class="project-container">
+            <div class="project-card">Portfolio Website</div>
+            <div class="project-card">To-Do List App</div>
+            <div class="project-card">Communication</div>
+            
+        </div>
+    </section>
+
+
+    
+        </div><section id="skills">
+    <h2>My Skills</h2>
+
+    <div class="skills-container">
+
+        <div class="skill-card" onclick="showInfo('html')">
+            <h3>HTML</h3>
+            <p>90%</p>
+        </div>
+
+        <div class="skill-card" onclick="showInfo('css')">
+            <h3>CSS</h3>
+            <p>85%</p>
+        </div>
+
+        <div class="skill-card" onclick="showInfo('python')">
+            <h3>Python</h3>
+            <p>80%</p>
+        </div>
+
+    </div>
+
+    <div id="skill-info"></div>
+</section>
+
+<script>
+function showInfo(skill) {
+    const info = document.getElementById("skill-info");
+
+    if (skill === "html") {
+        info.innerHTML = `
+            <h3>HTML</h3>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" width="150">
+            <p>HTML is used to create the structure of web pages.</p>
+            <ul>
+                <li>Headings</li>
+                <li>Paragraphs</li>
+                <li>Images</li>
+                <li>Forms</li>
+            </ul>
+        `;
+    }
+
+    if (skill === "css") {
+        info.innerHTML = `
+            <h3>CSS</h3>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" width="120">
+            <p>CSS is used to style web pages.</p>
+            <ul>
+                <li>Colors</li>
+                <li>Layouts</li>
+                <li>Animations</li>
+                <li>Responsive Design</li>
+            </ul>
+        `;
+    }
+
+    if (skill === "python") {
+        info.innerHTML = `
+            <h3>Python</h3>
+            <img src="https://www.python.org/static/community_logos/python-logo.png" width="200">
+            <p>Python is a programming language used for software development and automation.</p>
+            <ul>
+                <li>Variables and Data Types</li>
+                <li>Loops and Conditions</li>
+                <li>Functions</li>
+                
+            </ul>
+        `;
+    }
+}
+</script>
+
+
+<section id="contact">
+    <h2>Contact Me</h2>
+
+    <div class="card">
+        <p>Email: chinorutendo@gmail.com</p>
+        <p>Phone: <a href="tel:+263789277284">+263789277284</a></p>
+        <p>LinkedIn: <a href="#">Rutendo Chino</a></p>
+        <p>GitHub: <a href="#">Rutendo Chino</a></p>
+        <p>WhatsApp: <a href="https://wa.me/263789277284">+263789277284</a></p>
+    </div>
+</section>
+</body>
+</html>
+
